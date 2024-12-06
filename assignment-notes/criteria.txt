@@ -1,0 +1,12 @@
+PART E
+RailList and TownMap act as the subjects. RailObserver and TownObservers are the observers and FileManager and ConsoleOutput are the concrete observers. Whenever railList or TownMap need to update or add something to their respective containers, they send out their respective update signals to let the concrete observers know that an update has occurred. For the FileManager class this is especially important as the file is updated in real time as the changes occur. For the ConsoleOutput, only every second does it need to have the most up to date information to display to the terminal for the user to see (every day).
+
+In the update method for FileManager, it updates the respective container it has according to the container provided in the update method and then calls updateFile to change the file according to what the container it has received has. The update method for ConsoleOutput, on the other hand, only updates the respective container. In the main function, the displaySimulation method from ConsoleOutput is called every second to display to the user. The updates method only function here is to update the container.
+
+The observer pattern being used in this instance allows the FileManager class and ConsoleOutput to be separated from the subjects. Otherwise these classes would be a lot more dependent and would result in far more complicated code. 
+
+
+PART F
+This is used with the railway as certain states the railway can be in will need to ignore certain methods and other features I will discuss. The Railway has four states; single railway being constructed state, single railway state, single railway with double railway being constructed state and double railway state. When the railways are being constructed they adjust the time of the railway and check if its 0 every iteration. This allows for the simulation of the railway being under construction for 5 days. When it reaches 0, a state transition is undergone depending on which state the railway is in. When the railway is in single railway state, a railway duplication message will be allowed as construction being called from this state results in a state transition. 
+
+Using the state pattern allows for messages to be easily ignored if they do not apply to the current state without creating massive if else statements to check for every single possibility. There is some error checking that needs to be done to prevent potential issues, but the states in general allow for many possibilities to be ignored.

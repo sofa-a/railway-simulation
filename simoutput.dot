@@ -1,0 +1,61 @@
+graph Towns {
+	North_Wappwick
+	Loxhall
+	Dowstoke
+	Morrleigh
+	Abbots_Piddlemere
+	East_Ibsway
+	Hither_Bidlow
+	Newton_Dunmoor
+	Burton_Pollcombe
+	Fallowdale
+	Nether_Clatterforth
+	Russelhurst
+	Marston_Blewbury
+	Shetfield
+	Lichmill
+	Ardbridge
+	Bleckward
+	Broad_Eyleborough
+	Fowlage
+	Loxmond
+	Bleckburgh
+	High_Nailwych
+	Ardbridge -- Dowstoke[color="black:black"]
+	Bleckward -- Russelhurst
+	Bleckward -- Ardbridge
+	Dowstoke -- Loxhall
+	Russelhurst -- Broad_Eyleborough
+	Russelhurst -- Loxhall
+	Russelhurst -- Ardbridge
+	Loxhall -- Fowlage[color="black:black"]
+	Dowstoke -- Broad_Eyleborough
+	Dowstoke -- Russelhurst
+	Loxhall -- Ardbridge[color="black:black"]
+	Abbots_Piddlemere -- Loxmond
+	Broad_Eyleborough -- Abbots_Piddlemere
+	Fowlage -- Russelhurst[color="black:black"]
+	High_Nailwych -- Burton_Pollcombe[color="black:black"]
+	Broad_Eyleborough -- East_Ibsway[color="black:black"]
+	Abbots_Piddlemere -- Burton_Pollcombe[color="black:black"]
+	Hither_Bidlow -- Loxmond
+	Hither_Bidlow -- High_Nailwych[color="black:black"]
+	Loxhall -- Abbots_Piddlemere
+	North_Wappwick -- Abbots_Piddlemere[color="black:black"]
+	Hither_Bidlow -- Dowstoke
+	East_Ibsway -- Russelhurst
+	Broad_Eyleborough -- Loxmond[color="black:black"]
+	Bleckward -- Dowstoke[color="black:black"]
+	East_Ibsway -- Abbots_Piddlemere
+	Abbots_Piddlemere -- Bleckward
+	Loxmond -- Morrleigh
+	Fowlage -- Dowstoke
+	Loxmond -- Loxhall
+	Hither_Bidlow -- North_Wappwick
+	North_Wappwick -- Morrleigh
+	Loxhall -- Broad_Eyleborough
+	Shetfield -- Broad_Eyleborough
+	High_Nailwych -- Fallowdale[style="dashed"]
+	Abbots_Piddlemere -- High_Nailwych[style="dashed"]
+	Fallowdale -- Hither_Bidlow[style="dashed"]
+}
